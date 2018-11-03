@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Forced Square 14
+font pango:DejaVu Sans Bold 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -207,16 +207,19 @@ exec_always --no-startup-id compton -bc
 
  # Show the sup-mail scratchpad window, if any.
  # bindsym mod4+s [title="^Sup ::"] scratchpad show
-set_from_resource $black i3wm.color0 #000000 
 
-new_window border 1 pixel
 
-# class                  border  backgr. text    indicator child_border
+set_from_resource $frenchPlum PurplePalette.frenchPlum #00FF50
+set_from_resource $darkPuce PurplePalette.darkPuce #00FF50
+set_from_resource $jazzberryJam PurplePalette.jazzberryJam #00FF50
 
- client.focused          $black  $black  #ffffff #2e9ef4   #285577
- client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
- client.unfocused        #333333 #222222 #888888 #292d2e   #222222
- client.urgent           #2f343a #900000 #ffffff #900000   #900000
- client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+default_border pixel 1
 
- client.background       #ffffff
+# class            border         backgr.         text            indicator       child_border
+client.focused          $frenchPlum $darkPuce #ffffff $jazzberryJam   $darkPuce
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
