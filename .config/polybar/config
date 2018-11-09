@@ -35,7 +35,7 @@ radius = 5
 
 background = ${colors.background}
 
-module-margin-left = 5
+module-margin-left = 0
 module-margin-right = 5
 
 font-0 = DejaVu:fontformat=truetype:size=10;1
@@ -45,7 +45,7 @@ font-3 = DejaVu:fontformat=truetype:size=11;1 #i3 focused
 font-4 = IcoMoon:pixelsize=10
 
 modules-left = i3
-modules-right = battery filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth temperature date
+modules-right = battery filesystem xbacklight pulseaudio memory cpu wlan eth temperature date
 
 tray-position = right
 tray-detached = false
@@ -188,7 +188,7 @@ label = %percentage_used%%
 [module/wlan]
 type = internal/network
 interface = wlp3s0
-interval = 3.0
+interval = 1.0
 
 format-connected = <label-connected>
 label-connected = Wlan %local_ip% [%downspeed%]
