@@ -172,8 +172,8 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 ## amount to increase/decrease volume as a percentage )
 set $volumestep 5
 
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +$volumestep% 
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -$volumestep%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +$volumestep% 
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -$volumestep%
 
 #TODO
 #bindsym XF86AudioMute        exec $volumepath/volume -amn -t $statuscmd -u $statussig
