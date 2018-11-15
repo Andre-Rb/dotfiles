@@ -232,9 +232,9 @@ type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
 label-volume = Vol %percentage%%
-label-volume-foreground = ${root.foreground}
+label-volume-foreground = ${colors.foreground}
 
-label-muted = 🔇 muted
+label-muted = muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
