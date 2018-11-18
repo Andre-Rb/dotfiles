@@ -1,0 +1,39 @@
+Xft.dpi:       96
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.autohint:  false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+!COLORS-------------------------------------------------------------------------
+! special
+*foreground:                   #bfaf9f
+*PurplePalette.smokyBlack:       #070707
+*PurplePalette.gunMetal:        #2e313a
+*PurplePalette.jazzberryJam:    #A40E4C
+*PurplePalette.frenchPlum:      #870058
+*PurplePalette.darkPuce:        #4A2040
+
+
+
+!URxvt--------------------------------------------------------------------------
+URxvt.letterSpace: 0
+!URxvt.font:xft:cherry:size=7
+
+URxvt.font:xft:UbuntuMono-R:size=10
+
+URxvt.depth:                      32
+URxvt.background:                 [65]#222227
+URxvt*borderColor:                [65]#222227
+URxvt*internalBorder:             10
+URxvt*scrollBar:                  false
+URxvt*mouseWheelScrollPage:       false
+URxvt*cursorBlink:                true
+URxvt*saveLines:                  5000
+
+! Normal copy-paste keybindings without perls
+URxvt.iso14755:                   false
+URxvt.keysym.Shift-Control-V:     eval:paste_clipboard
+URxvt.keysym.Shift-Control-C:     eval:selection_to_clipboard
+
